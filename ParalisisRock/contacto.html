@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1 class="titulo">Contactanos!</h1>
+    </div>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="integrantes.html">Galeria</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="shows.html">Shows</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="contacto.html">Contacto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="escuchanos.html">Escuchanos</a>
+      </li>
+    </ul>
+    <div class="containerr">
+     
+
+      <form id='survey-form'>
+          <div class='form-input'>
+              <label id='name-label'>Nombre/Empresa</label>
+              <input type='text' id='name' placeholder='Escriba su Nombre/Empresa' class='form-input-size' required />
+          </div>
+          <div class='form-input'>
+              <label id='email-label'>Email</label>
+              <input type='email' id='email' placeholder='Escriba su email' class='form-input-size' required />
+          </div>
+          <div class='form-input'>
+              <label id='number-label'>Edad
+                  <span>(opcional)</span>
+              </label>
+              <input type='number' id='number' placeholder='25' min='0' max='80' class='form-input-size' />
+          </div>
+
+          <div class='form-input'>
+              <p>¡Que opcion describe mejor su razon para contactarnos?</p>
+              <select id='dropdown' class='form-input-size' required>
+                  <option disabled selected value>Elija la opcion mas adecuada</option>
+                  <option value='Saludo'>Saludo</option>
+                  <option value='Empresa en busca de negocios'>Empresa en busca de negocios</option>
+                  <option value='Fotografia'>Fotografia</option>
+                  <option value='Videoclip'>Videoclip</option>
+                  <option value='Oferta de show'>Oferta de show</option>
+                  <option value='Mensaje personal a la banda'>Mensaje personal a la banda</option>
+                  <option value='Otro'>Otro</option>
+              </select>
+          </div>
+
+          <div class='form-input'>
+              <p>Recomendarias Paralisis Rock a otras personas?</p>
+              <input type='radio' name='answer' id='radio-btn' value='Definately' checked />Definitivamente    </br>
+              <input type='radio' name='answer' id='radio-btn' value='Maybe' />Capaz </br>
+              <input type='radio' name='answer' id='radio-btn' value='Not sure' />No estoy seguro </br>
+          </div>
+
+          <div class='form-input'>
+              <p>Cual es tu cancion favorita de la banda?
+                  <span>(Puede marcar las que quiera)</span>
+              </p>
+              <label><input type='checkbox' id='check-box' value='Ruby on Rails'>Ruby</label>
+              <label><input type='checkbox' id='check-box' value='JavaScript'>Solo yo</label>
+              <label><input type='checkbox' id='check-box' value='React'>Alma salvaje</label>
+              <label><input type='checkbox' id='check-box' value='Python'>Brindo por vos</label>
+              <label><input type='checkbox' id='check-box' value='Java'>Mañana</label>
+              <label><input type='checkbox' id='check-box' value='PHP'>No estamos</label>
+              <label><input type='checkbox' id='check-box' value='Angular'>Quizas</label>
+          </div>
+
+          <div class='form-input'>
+              <p>Escriba lo que desee decirnos o resuma brevemente su Oferta</p>
+              <textarea type='text' placeholder='Escriba aqui su mensaje...'></textarea>
+          </div>
+
+          <div class='form-input'>
+              <button type='submit' id='submit'>Subir</button>
+          </div>
+      </form>
+  </div>
+  </body>
+  <footer>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          href="https://www.instagram.com/paralisisrock/"
+        >
+          Instagram
+        </a>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          href="https://www.youtube.com/channel/UCUwF7M8Yyrx4PAComt1l9CA/featured"
+        >
+          Youtube
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="https://www.twitch.tv/paralisis_">
+          Twitch
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="https://twitter.com/paralisisrock">
+          Twitter
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Spotify</a>
+      </li>
+    </ul>
+  </footer>
+</html>
